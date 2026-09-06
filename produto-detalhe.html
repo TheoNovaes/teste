@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Nome do produto] — [NOME DA LOJA]</title>
+  <meta name="description" content="Detalhes, numeração e cores disponíveis do produto na [NOME DA LOJA].">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-conteudo">
+      <a href="index.html" class="logo">[NOME DA LOJA]</a>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html" aria-current="page">Produtos</a></li>
+          <li><a href="masculino.html">Masculino</a></li>
+          <li><a href="feminino.html">Feminino</a></li>
+          <li><a href="guia-de-numeracao.html">Guia de Numeração</a></li>
+          <li><a href="trocas-e-devolucoes.html">Trocas</a></li>
+          <li><a href="orcamento.html">Orçamento</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="titulo-produto">
+      <span class="eyebrow">[Marca]</span>
+      <h1 id="titulo-produto">[Nome do produto]</h1>
+
+      <article>
+        <div class="imagem-placeholder" role="img" aria-label="Foto do produto [Nome do produto]">
+          [ IMAGEM DO PRODUTO — substituir por foto real ]
+        </div>
+        <p class="preco text-primaria" style="font-size:1.5rem; margin-top:1rem;">R$ 0,00</p>
+        <p>[Descrição completa do produto: material, indicação de uso,
+          diferenciais.]</p>
+      </article>
+
+      <figure class="midia-wrapper">
+        <video controls width="480" src="assets/video/produto-demonstracao.mp4" poster="assets/img/produto-poster.jpg">
+          Seu navegador não suporta reprodução de vídeo.
+        </video>
+        <figcaption>Vídeo demonstrativo do produto (giro 360° / detalhes).</figcaption>
+      </figure>
+
+      <article>
+        <h2>Numeração e cores disponíveis</h2>
+        <table>
+          <caption>Estoque disponível por numeração e cor</caption>
+          <thead>
+            <tr>
+              <th scope="col">Numeração (BR)</th>
+              <th scope="col">Cor</th>
+              <th scope="col">Disponibilidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>38</td>
+              <td>[Cor 1]</td>
+              <td>Disponível</td>
+            </tr>
+            <tr>
+              <td>39</td>
+              <td>[Cor 1]</td>
+              <td>Disponível</td>
+            </tr>
+            <tr>
+              <td>40</td>
+              <td>[Cor 2]</td>
+              <td>Últimas unidades</td>
+            </tr>
+            <tr>
+              <td>41</td>
+              <td>[Cor 2]</td>
+              <td>Esgotado</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><a href="guia-de-numeracao.html">Não sabe qual numeração escolher? Veja o guia completo.</a></p>
+      </article>
+
+      <a href="orcamento.html" class="btn btn-primario">Solicitar orçamento deste produto</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-conteudo">
+      <div>
+        <h3>[Nome da loja]</h3>
+        <a href="sobre.html">Sobre a loja</a>
+        <a href="trocas-e-devolucoes.html">Trocas e devoluções</a>
+        <a href="guia-de-numeracao.html">Guia de numeração</a>
+      </div>
+      <div>
+        <h3>Atendimento</h3>
+        <a href="contato.html">Fale conosco</a>
+        <a href="orcamento.html">Pedido de orçamento</a>
+      </div>
+      <div>
+        <h3>Loja</h3>
+        <a href="masculino.html">Masculino</a>
+        <a href="feminino.html">Feminino</a>
+        <a href="produtos.html">Todos os produtos</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 [NOME DA LOJA]. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido de Orçamento — [NOME DA LOJA]</title>
+  <meta name="description" content="Solicite um orçamento de compra em quantidade na [NOME DA LOJA].">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-conteudo">
+      <a href="index.html" class="logo">[NOME DA LOJA]</a>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="masculino.html">Masculino</a></li>
+          <li><a href="feminino.html">Feminino</a></li>
+          <li><a href="guia-de-numeracao.html">Guia de Numeração</a></li>
+          <li><a href="trocas-e-devolucoes.html">Trocas</a></li>
+          <li><a href="orcamento.html" aria-current="page">Orçamento</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="titulo-orcamento">
+      <span class="eyebrow">Compra em quantidade</span>
+      <h1 id="titulo-orcamento">Solicitar Orçamento</h1>
+      <p>Preencha o formulário abaixo para pedidos de atacado, uniformes para
+        equipes/empresas ou compras em quantidade. Retornaremos em até 2 dias úteis.</p>
+
+      <form action="#" method="post" novalidate>
+
+        <fieldset>
+          <legend>Dados de contato</legend>
+
+          <div class="campo">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required minlength="3" maxlength="80" autocomplete="name">
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="nome@exemplo.com">
+          </div>
+
+          <div class="campo">
+            <label for="telefone">Telefone / WhatsApp</label>
+            <input type="tel" id="telefone" name="telefone" required
+                   pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
+                   placeholder="(11) 91234-5678"
+                   autocomplete="tel">
+            <small class="ajuda">Formato: (DD) 91234-5678</small>
+          </div>
+
+          <div class="campo">
+            <label for="empresa">Empresa (opcional)</label>
+            <input type="text" id="empresa" name="empresa" maxlength="80">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Detalhes do pedido</legend>
+
+          <div class="campo">
+            <label for="categoria">Categoria de interesse</label>
+            <select id="categoria" name="categoria" required>
+              <option value="" selected disabled>Selecione uma opção</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="infantil">Infantil</option>
+              <option value="misto">Variado / misto</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="quantidade">Quantidade estimada de pares</label>
+            <input type="number" id="quantidade" name="quantidade" min="10" max="10000" step="1" required>
+            <small class="ajuda">Pedidos de orçamento a partir de 10 pares</small>
+          </div>
+
+          <div class="campo">
+            <label for="prazo">Data desejada para entrega</label>
+            <input type="date" id="prazo" name="prazo">
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Detalhes adicionais</label>
+            <textarea id="mensagem" name="mensagem" maxlength="500"
+              placeholder="Modelos de interesse, numerações necessárias, cores etc."></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primario">Enviar pedido de orçamento</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-conteudo">
+      <div>
+        <h3>[Nome da loja]</h3>
+        <a href="sobre.html">Sobre a loja</a>
+        <a href="trocas-e-devolucoes.html">Trocas e devoluções</a>
+        <a href="guia-de-numeracao.html">Guia de numeração</a>
+      </div>
+      <div>
+        <h3>Atendimento</h3>
+        <a href="contato.html">Fale conosco</a>
+        <a href="orcamento.html">Pedido de orçamento</a>
+      </div>
+      <div>
+        <h3>Loja</h3>
+        <a href="masculino.html">Masculino</a>
+        <a href="feminino.html">Feminino</a>
+        <a href="produtos.html">Todos os produtos</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 [NOME DA LOJA]. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

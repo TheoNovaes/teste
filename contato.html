@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — [NOME DA LOJA]</title>
+  <meta name="description" content="Fale com a equipe da [NOME DA LOJA].">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-conteudo">
+      <a href="index.html" class="logo">[NOME DA LOJA]</a>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="masculino.html">Masculino</a></li>
+          <li><a href="feminino.html">Feminino</a></li>
+          <li><a href="guia-de-numeracao.html">Guia de Numeração</a></li>
+          <li><a href="trocas-e-devolucoes.html">Trocas</a></li>
+          <li><a href="orcamento.html">Orçamento</a></li>
+          <li><a href="contato.html" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="titulo-contato">
+      <span class="eyebrow">Fale conosco</span>
+      <h1 id="titulo-contato">Entre em Contato</h1>
+      <p>Dúvidas sobre produtos, pedidos ou parcerias? Preencha o formulário
+        abaixo ou utilize um dos canais informados.</p>
+
+      <form action="#" method="post" novalidate>
+
+        <fieldset>
+          <legend>Seus dados</legend>
+
+          <div class="campo">
+            <label for="nome-contato">Nome completo</label>
+            <input type="text" id="nome-contato" name="nome" required minlength="3" maxlength="80" autocomplete="name">
+          </div>
+
+          <div class="campo">
+            <label for="email-contato">E-mail</label>
+            <input type="email" id="email-contato" name="email" required autocomplete="email" placeholder="nome@exemplo.com">
+          </div>
+
+          <div class="campo">
+            <label for="telefone-contato">Telefone</label>
+            <input type="tel" id="telefone-contato" name="telefone"
+                   pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
+                   placeholder="(11) 91234-5678"
+                   autocomplete="tel">
+            <small class="ajuda">Formato: (DD) 91234-5678 — opcional</small>
+          </div>
+
+          <div class="campo">
+            <label for="cep-contato">CEP (opcional)</label>
+            <input type="text" id="cep-contato" name="cep"
+                   pattern="\d{5}-?\d{3}"
+                   placeholder="01234-567"
+                   autocomplete="postal-code">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sua mensagem</legend>
+
+          <div class="campo">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto" required>
+              <option value="" selected disabled>Selecione uma opção</option>
+              <option value="duvida">Dúvida sobre produto</option>
+              <option value="pedido">Acompanhamento de pedido</option>
+              <option value="troca">Troca ou devolução</option>
+              <option value="outro">Outro assunto</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mensagem-contato">Mensagem</label>
+            <textarea id="mensagem-contato" name="mensagem" required minlength="10" maxlength="500"
+              placeholder="Escreva aqui sua mensagem..."></textarea>
+          </div>
+
+          <div class="campo">
+            <label>
+              <input type="checkbox" id="aceite" name="aceite" required style="width:auto; display:inline-block;">
+              Concordo com o uso dos meus dados para retorno deste contato.
+            </label>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primario">Enviar mensagem</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="titulo-canais">
+      <span class="eyebrow">Outros canais</span>
+      <h2 id="titulo-canais">Outras formas de contato</h2>
+      <p>E-mail: [email@exemplo.com]<br>
+        Telefone: [(00) 0000-0000]<br>
+        Endereço: [Endereço da loja física, se houver]</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-conteudo">
+      <div>
+        <h3>[Nome da loja]</h3>
+        <a href="sobre.html">Sobre a loja</a>
+        <a href="trocas-e-devolucoes.html">Trocas e devoluções</a>
+        <a href="guia-de-numeracao.html">Guia de numeração</a>
+      </div>
+      <div>
+        <h3>Atendimento</h3>
+        <a href="contato.html">Fale conosco</a>
+        <a href="orcamento.html">Pedido de orçamento</a>
+      </div>
+      <div>
+        <h3>Loja</h3>
+        <a href="masculino.html">Masculino</a>
+        <a href="feminino.html">Feminino</a>
+        <a href="produtos.html">Todos os produtos</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 [NOME DA LOJA]. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
